@@ -1,0 +1,110 @@
+<?php
+/**
+ * Theme footer template.
+ *
+ * @package imfktheme
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+?>
+</div><!-- #page-content -->
+
+<!-- Footer -->
+<footer class="site-footer">
+
+	<!-- Newsletter Bar -->
+	<div class="footer-newsletter">
+		<div class="footer-newsletter__text">
+			<p class="footer-newsletter__heading">
+				Join our<br />newsletter
+			</p>
+		</div>
+
+		<!-- Constant Contact Signup Form -->
+		<div class="footer-newsletter__form">
+			<p style="color: white; font-size: 14px; padding: 10px;">Newsletter signup form - please complete Constant Contact setup in WordPress admin.</p>
+			<?php
+			// Uncomment this line after setting up Constant Contact:
+			// echo do_shortcode( '[ctct form="2960" show_title="false"]' );
+			?>
+		</div>
+	</div>
+
+	<!-- Separator Line -->
+	<div class="footer-separator">
+		<div class="footer-separator__line"></div>
+	</div>
+
+	<!-- Main Footer -->
+	<div class="footer-main">
+
+		<!-- Footer Logo -->
+		<div class="footer-logos">
+			<img
+				src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/footer-logo.svg' ); ?>"
+				alt=""
+				class="footer-logo footer-logo--flame"
+			/>
+			<img
+				src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo-in-my.svg' ); ?>"
+				alt=""
+				class="footer-logo footer-logo--in-my"
+			/>
+			<img
+				src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo-fathers-new.svg' ); ?>"
+				alt=""
+				class="footer-logo footer-logo--fathers"
+			/>
+			<img
+				src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo-kitchen.svg' ); ?>"
+				alt="<?php bloginfo( 'name' ); ?>"
+				class="footer-logo footer-logo--kitchen"
+			/>
+		</div>
+
+		<!-- Footer Link Columns -->
+		<div class="footer-columns">
+
+			<!-- Support Us -->
+			<div class="footer-column footer-column--support">
+				<p class="footer-column__title">support us</p>
+				<a href="<?php echo esc_url( home_url( '/donate/' ) ); ?>" class="footer-column__link">donate</a>
+				<a href="<?php echo esc_url( home_url( '/store/' ) ); ?>" class="footer-column__link">shop</a>
+				<a href="<?php echo esc_url( home_url( '/events/' ) ); ?>" class="footer-column__link">events</a>
+			</div>
+
+			<!-- Know Us -->
+			<div class="footer-column footer-column--know">
+				<p class="footer-column__title">know us</p>
+				<a href="<?php echo esc_url( home_url( '/about/' ) ); ?>" class="footer-column__link">our mission</a>
+				<a href="<?php echo esc_url( home_url( '/services/' ) ); ?>" class="footer-column__link">services</a>
+				<a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>" class="footer-column__link">news & events</a>
+			</div>
+
+			<!-- Connect With Us -->
+			<div class="footer-column footer-column--connect">
+				<p class="footer-column__title">connect with us</p>
+				<a href="<?php echo esc_url( home_url( '/connect-with-us/' ) ); ?>" class="footer-column__link">contact</a>
+				<a href="<?php echo esc_url( home_url( '/connect-with-us/partnerships/' ) ); ?>" class="footer-column__link">collaborate</a>
+			</div>
+
+		</div>
+
+		<!-- Social Media Icons -->
+		<div class="footer-social">
+			<img
+				src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/social-media.svg' ); ?>"
+				alt="Facebook, Instagram, X, YouTube"
+				class="footer-social__icons"
+			/>
+		</div>
+
+	</div>
+
+</footer>
+
+<?php wp_footer(); ?>
+</body>
+</html>

@@ -1,0 +1,225 @@
+/**
+ * Editor Styles — Gutenberg & Classic Editor
+ *
+ * Ensures the editor matches the frontend styling.
+ * WordPress automatically wraps these styles in .editor-styles-wrapper for Gutenberg.
+ *
+ * @package imfktheme
+ */
+
+/* ---------------------------------------------------------------
+   Editor Base Styles
+   --------------------------------------------------------------- */
+body,
+.editor-styles-wrapper {
+    font-family: 'Sora', ui-sans-serif, system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #374151;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 3rem;
+  line-height: 1.75;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+  color: #141423;
+  font-weight: 600;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+
+h1 { font-size: 48px; }
+h2 { font-size: 36px; }
+h3 { font-size: 28px; }
+h4 { font-size: 24px; }
+h5 { font-size: 20px; }
+h6 { font-size: 18px; }
+
+/* Lists */
+ul,
+ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  line-height: 1.75;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Links */
+a {
+  color: #B60F1F;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a:hover,
+a:focus {
+  color: #8B0A16;
+}
+
+/* Blockquotes */
+blockquote {
+  margin: 3rem 0;
+  padding: 1.5rem 2rem;
+  border-left: 4px solid #FFCA42;
+  background: #FFF4D9;
+  font-style: italic;
+}
+
+blockquote p {
+  margin-bottom: 1rem;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 3rem 0;
+  border-radius: 8px;
+}
+
+figure {
+  margin: 3rem 0;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.5rem 1rem;
+  border: 1px solid #CCCCCC;
+  text-align: left;
+}
+
+th {
+  background: #f3f3f3;
+  font-weight: 600;
+  color: #141423;
+}
+
+tr:nth-child(even) {
+  background: #f3f3f3;
+}
+
+/* Horizontal Rules */
+hr {
+  margin: 3rem 0;
+  border: none;
+  border-top: 2px solid #d1d1d1;
+}
+
+/* Code */
+code {
+  padding: 2px 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+  color: #1a1a1a;
+}
+
+pre {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: #141423;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+/* Strong and Emphasis */
+strong,
+b {
+  font-weight: 600;
+  color: #141423;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+/* Spacing for embedded content */
+iframe,
+video,
+embed {
+  max-width: 100%;
+  margin: 3rem 0;
+}
+
+/* Classic Editor specific */
+.mce-content-body {
+  font-family: 'Sora', ui-sans-serif, system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #374151;
+}
